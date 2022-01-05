@@ -1,26 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<n-space vertical size="large" :style="{padding: 24 + 'px'}">
+  <hello-world></hello-world>
+  <d-table></d-table>
+</n-space>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import { NSpace } from 'naive-ui'
+import DTable from './components/DTable.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    NSpace,
+    DTable
+    // NLayout
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
